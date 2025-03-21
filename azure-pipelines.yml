@@ -10,7 +10,7 @@ resources:
 
 variables:
 
-  # Container registry service connection established during pipeline creation
+  # Container registry service connection established during pipeline creationn
   dockerRegistryServiceConnection: 'ad909ff1-037e-4f7b-8b09-2761d576aa1a'
   imageRepository: 'bvbpraveenpipelinesjavascriptdocker'
   containerRegistry: 'mycontainerregistryazure1.azurecr.io'
