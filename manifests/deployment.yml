@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: bvbpraveenpipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bvbpraveenpipelinesjavascriptdocker
+  template:
+    metadata:
+      labels:
+        app: bvbpraveenpipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: bvbpraveenpipelinesjavascriptdocker 
+          image: mycontainerregistryazure1.azurecr.io/bvbpraveenpipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
